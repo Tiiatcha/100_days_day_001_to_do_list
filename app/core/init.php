@@ -9,10 +9,10 @@ $real_path = realpath($_SERVER["DOCUMENT_ROOT"]);
 $root = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'];
 $GLOBALS['config'] = array(
 	'mysql' => array(
-		'host' => '10.141.55.13',
-		'username' => 'Craig',
-		'password' => 'Cadent@123',
-		'db' => 'pex_hub'
+		'host' => 'localhost',
+		'username' => 'zombie',
+		'password' => 'zombie',
+		'db' => '100days__todo_list'	
 	),
 	'remember' => array(
 		'cookie_name' => 'hash',

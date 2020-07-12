@@ -8,4 +8,5 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="app\node_modules\bootstrap\dist\css\bootstrap.css">
+    <link rel="stylesheet" href="app\resources\css\style.css">
   </head>

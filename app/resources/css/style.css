@@ -1,0 +1,32 @@
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+.sidebar__container{
+    width:250px;
+    height:calc(100vh - 56px);
+}
+#sidebar{
+    height:calc(100vh - 56px)
+}
+.wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    transition: all 0.3s;
+    overflow-x: hidden;
+}
+.wrapper.sidebar__hidden{
+    
+    left:-250px;
+    width:calc(100vw + 250px);
+    transition: all 0.3s;
+}
+#sidebar{
+    width:250px;
+    background-color: #252525;
+    color:white;
+    padding:5px;
+}
+

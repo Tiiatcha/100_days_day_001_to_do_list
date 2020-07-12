@@ -43,13 +43,13 @@
                         <div class="card" style="width: 20rem;">
                             <div class="card-body">
                                 <h5 class="card-title">Craig Davison</h5>
-                                <form action="add_todo_item">
+                                <form action="app\handlers\add_item.php" data-options='{}'>
                                     <div class="form-row align-items-center">
                                         <div class="col-auto">
-                                            <input type="text" class="form-control mb-2" name="action" id="new_action" placeholder="What do you want to do?">
+                                            <input type="text" class="form-control mb-2" name="todo_action" id="new_action" placeholder="What do you want to do?">
                                         </div>
                                         <div class="col-auto">
-                                            <button type="submit" class="btn btn-primary mb-2">Add</button>
+                                            <button id="add_basic_todo" type="button" class="btn btn-primary mb-2">Add</button>
                                         </div>
                                     </div>
                                 </form>
@@ -59,10 +59,6 @@
                                 <li class="list-group-item">Dapibus ac facilisis in</li>
                                 <li class="list-group-item">Vestibulum at eros</li>
                             </ul>
-                            <div class="card-body">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
-                            </div>
                         </div>    
                     </div>
                 </div>
@@ -73,5 +69,14 @@
      
     
     <?php include "_footer.php" ?>
+    <script>
+        const add_todo = (e)=>{
+            form_submit(e.target.form);
+        }
+        (()=>{
+            const add_basic_todo_btn = document.querySelector('#add_basic_todo');
+            add_basic_todo_btn.addEventListener('click',add_todo);
+        })();
+    </script>
     </body>
 </html>

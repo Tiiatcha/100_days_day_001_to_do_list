@@ -5,4 +5,6 @@
     toggle_menu_button.addEventListener('click',e=>{
         side_menu.classList.toggle('sidebar__hidden');
     })
+
+   
 })();
